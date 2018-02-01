@@ -25,7 +25,7 @@ setup-xorg-base
 apk add xf86-input-synaptics
 cp ./70-synaptics.conf /etc/X11/xorg.conf.d/
 
-apk add i3wm-gaps i3status i3lock i3status xrandr lxterminal lxappearence
+apk add i3wm-gaps i3status i3lock i3status xrandr lxterminal lxappearance
 apk add ttf-inconsolata font-noto
 
 apk add alsa-utils alsa-lib xbacklight
@@ -34,7 +34,7 @@ adduser root audio
 adduser fg audio
 
 chmod 755 ./usrbin/*
-cp ./usrbin/* /usr/bin
+cp ./usrbin/* /usr/bin/
 
 apk add sudo
 echo "RUN VISUDO NOW!"
