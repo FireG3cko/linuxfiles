@@ -1,0 +1,5 @@
+#!/bin/ash
+killall wpa_supplicant
+killall udhcpc 
+ip link set wlan0 down
+ip link set wlan0 up
