@@ -34,6 +34,7 @@ adduser root audio
 adduser fg audio
 
 cp ./i3status.conf /etc/i3status.conf
+cp ./profile /etc/profile
 
 chmod 755 ./usrbin/*
 cp ./usrbin/* /usr/bin/
