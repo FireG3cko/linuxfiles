@@ -2,7 +2,7 @@
 
 #to be run as root  when I install a new alpine box.
 
-adduser -h /home/fg -G users
+adduser -h /home/fg fg -G users
 
 cp ./repositories /etc/apk/repositories
 apk update
