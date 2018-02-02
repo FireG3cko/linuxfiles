@@ -33,6 +33,8 @@ apk add alsa-utils alsa-lib xbacklight
 adduser root audio
 adduser fg audio
 
+cp ./i3status.conf /etc/i3status.conf
+
 chmod 755 ./usrbin/*
 cp ./usrbin/* /usr/bin/
 
