@@ -28,7 +28,7 @@ cp ./70-synaptics.conf /etc/X11/xorg.conf.d/
 apk add i3wm-gaps i3status i3lock xrandr lxterminal lxappearance
 apk add ttf-inconsolata font-noto
 
-apk add alsa-utils alsa-lib xbacklight chromium dmenu
+apk add alsa-utils alsa-lib xbacklight chromium dmenu feh
 
 adduser root audio
 adduser fg audio
