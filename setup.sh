@@ -35,6 +35,7 @@ adduser fg audio
 
 cp ./i3status.conf /etc/i3status.conf
 cp ./profile /etc/profile
+cp ./motd /etc/motd
 
 chmod 755 ./usrbin/*
 cp ./usrbin/* /usr/bin/
