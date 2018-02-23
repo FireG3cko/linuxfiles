@@ -164,6 +164,7 @@ gaps outer 0
 smart_gaps on
 
 bindsym $mod+n exec chromium-browser --incognito
+bindsym $mod+t exec i3lock
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 3%+ 
