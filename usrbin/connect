@@ -29,6 +29,8 @@ if [[ $ipTest = "ping: unknown host wtfismyip.com/text" ]]; then
 	disconnect
 else
 	echo "Connection Succeeded"
+	rc-service chronyd start
+	rc-service sshd start
 	if [[ $configFile = "/tmp/connect.conf" ]]; then
 		echo "Save connection?"
 		read confirm

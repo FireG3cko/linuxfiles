@@ -1,6 +1,6 @@
 #!/bin/ash
 
-#to be run as root  when I install a new alpine box.
+#to be run as root when I install a new alpine box.
 
 adduser -h /home/fg fg -G users
 
@@ -39,7 +39,12 @@ cp ./motd /etc/motd
 
 cp ./usrbin/* /usr/bin/
 chmod 755 /usr/bin/cls /usr/bin/numpac
-chmod 766 /usr/bin/connect /usr/bin/disconnect
+chmod 744 /usr/bin/connect /usr/bin/disconnect
+chmod 777 ./fg.sh
+
+rc-update del networking boot
+rc-update del chronyd
+sed -i 's/need net/#need net' /etc/init.d/chronyd
 
 apk add sudo
 echo "RUN VISUDO NOW!"
