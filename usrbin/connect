@@ -22,9 +22,10 @@ fi
 wpa_supplicant -i wlan0 -c $configFile -B
 sleep 1.5s
 udhcpc -i wlan0 -b
-ipTest=$(ping -c 1 wtfismyip.com/text 2>&1 /dev/null)
+sleep .7s
+ipTest=$(ping -c 1 google.com 2>&1 /dev/null)
 
-if [[ $ipTest = "ping: unknown host wtfismyip.com/text" ]]; then
+if [[ $ipTest = "ping: unknown host google.com" ]]; then
 	echo "Connection failed."
 	disconnect
 else
